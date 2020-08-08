@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import App from "../App";
 import { isAuthenticated } from "../helper/AuthHelper";
 import { API } from "../backend";
-import { Redirect, Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 const Home = () => {
   const [pics, setPics] = useState([]);
-  const { user, token } = isAuthenticated();
+  const {  token } = isAuthenticated();
 
   useEffect(() => {
     fetch(`${API}/feed`, {
@@ -30,24 +30,17 @@ const Home = () => {
             return (
               <div key={item._id}>
                 <div className="card home-card">
-                  <span className="card-title">
-                    <h5 style={{ padding: "7px" }}>
-                      
-                        {item.postedBy}
-
-                      
-                    </h5>
-                  </span>
-   
                   <div className="card-content">
-            
-                    <h6>
+                  <h5 >
+                        <b>{item.postedBy}</b>
+                    </h5>
+                    <h5>
                       <b>Title : </b>
                       {item.title}
-                    </h6>
-                    <h6>
+                    </h5>
+                    <h5>
                       <b>Body :</b> {item.body}
-                    </h6>
+                    </h5>
                   </div>
                 </div>
               </div>

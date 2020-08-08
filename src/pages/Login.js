@@ -59,7 +59,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <button
-              className="btn waves-effect waves-light #ff1744 red accent-3"
+              className="btn waves-effect waves-light #ff1744 blue accent-3"
               onClick={() => login({ email, password })}
             >
               Login

@@ -5,13 +5,13 @@ const NavBar = () => {
   const history = useHistory();
   return (
     <nav>
-      <div className="nav-wrapper white">
+      <div className="nav-wrapper blue">
         {isAuthenticated() ? (
           <Link to="/" className="brand-logo left">
             FaceBook
           </Link>
         ) : (
-          <div className="brand-logo left ">Instagram</div>
+          <div className="brand-logo left ">FaceBook</div>
         )}
 
         <ul id="nav-mobile" className="right">
@@ -32,11 +32,7 @@ const NavBar = () => {
 
           {isAuthenticated() && (
             <Fragment>
-              <li>
-                <Link to="/following" className="brand">
-                  Following Posts
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/create" className="brand">
                   Create Post

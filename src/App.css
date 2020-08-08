@@ -9,11 +9,7 @@ nav .brand-logo {
 
 
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 
 .item {
   width: 30%;
@@ -25,12 +21,16 @@ body {
 }
 
 nav .brand {
-  color: black;
+  color: white;
+}
+.nav-wrapper{
+  color:#1877F2;
 }
 
 .brand-logo {
-  font-family: Grand Hotel;
+  font-family: "Open Sans";
   margin-left: 1%;
+  color: white !important;
 }
 
 .right {
@@ -71,14 +71,6 @@ nav .brand {
     0 6px 20px 0 rgba(87, 87, 87, 0.19);
 }
 
-.profile-card {
-  width: 200px;
-  height: 200px;
-  margin: 30px auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(71, 71, 71, 0.2),
-    0 6px 20px 0 rgba(87, 87, 87, 0.19);
-}
 
 .field {
   padding: 20px;

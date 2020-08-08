@@ -30,8 +30,8 @@ const Signup = () => {
             classes: "#43a047 green darken-1",
           });
           setTimeout(() => {
-            history.push("/");
-          }, 250);
+            history.push("/login");
+          }, 500);
         } else {
           M.toast({
             html: data.error,
@@ -49,7 +49,7 @@ const Signup = () => {
       <div>
         <div className="signupcard">
           <div className="card auth-card input-field">
-            <h2>Instagram</h2>
+            <h2>FaceBook</h2>
             <input
               type="text"
               className="input-field"
@@ -73,7 +73,7 @@ const Signup = () => {
             />
           
             <button
-              className="btn waves-effect waves-light #ff1744 red accent-3"
+              className="btn waves-effect waves-light #ff1744 blue accent-3"
               onClick={() => signup({ name, email, password })}
             >
               Signup
